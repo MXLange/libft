@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/04 13:11:13 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/04 14:15:03 by msprenge         ###   ########.fr       */
+/*   Created: 2022/11/04 13:16:50 by msprenge          #+#    #+#             */
+/*   Updated: 2022/11/04 14:15:19 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 //#include <ctype.h>
 //#include <stdio.h>
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	size_t	i;
 
-	i = 0;
-	while (s[i] != '\0')
+	i = ft_strlen(s) - 1;
+	while (s[i] >= 0)
 	{
 		if (s[i] == c)
 			return ((char *)(s + i));
-		i++;
+		i--;
 	}
 	return (NULL);
 }
 /*
 int	main()
 {
-	char *s = "aaaaaaaaacaaaa";
-	char tofind = 'a';
-	char *a = ft_strchr(s, tofind);
-	char *b = strchr(s, tofind);
+	char *s = "aaaaacaaaaaaaa";
+	char tofind = 'c';
+	char *a = ft_strrchr(s, tofind);
+	char *b = strrchr(s, tofind);
 
 	printf("Endereço da memória que *a aponta: %p\n", a);
 	printf("Conteúdo da memória: %c\n", *a);

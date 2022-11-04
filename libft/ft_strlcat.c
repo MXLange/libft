@@ -1,6 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/04 13:11:23 by msprenge          #+#    #+#             */
+/*   Updated: 2022/11/04 16:27:51 by msprenge         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+//#include <stdio.h>
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
@@ -26,12 +37,11 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	dest[j] = '\0';
 	return (dlen + slen);
 }
-
-int main (void)
+/*int main (void)
 {
 	char src[] = "Born";
 	char dest [] = "133742";
 
 	printf("%i \n", ft_strlcat(dest, src, 7));
 	printf("%s \n", dest);
-}
+}*/

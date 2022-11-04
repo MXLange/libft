@@ -1,6 +1,17 @@
-#include "libft.h"
-#include <stdio.h>
-#include <ctype.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/04 13:11:52 by msprenge          #+#    #+#             */
+/*   Updated: 2022/11/04 16:29:11 by msprenge         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+//#include <ctype.h>
 
 int	ft_tolower(int c)
 {
@@ -8,7 +19,7 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-
+/*
 int	main()
 {
 	char a = 'U';
@@ -19,4 +30,4 @@ int	main()
 	printf("%i\n", x);
 	printf("%i\n", y);
 	return 0;
-}
+}*/

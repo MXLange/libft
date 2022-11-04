@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mu <mu@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 16:34:57 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/03 11:19:40 by mu               ###   ########.fr       */
+/*   Updated: 2022/11/04 14:30:03 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*p_src;
 	unsigned char	*p_dest;
 
+	if (!src && !dest)
+		return (NULL);
 	p_dest = (unsigned char *)dest;
 	p_src = (unsigned char *)src;
 	i = 0;

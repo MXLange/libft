@@ -1,7 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/04 13:11:58 by msprenge          #+#    #+#             */
+/*   Updated: 2022/11/04 16:29:21 by msprenge         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
-#include <ctype.h>
+//#include <stdio.h>
+//#include <ctype.h>
 
 int	ft_toupper(int c)
 {
@@ -9,7 +19,7 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-
+/*
 int	main()
 {
 	char a = 'u';
@@ -20,4 +30,4 @@ int	main()
 	printf("%i\n", x);
 	printf("%i\n", y);
 	return 0;
-}
+}*/

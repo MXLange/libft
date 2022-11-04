@@ -6,18 +6,19 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 12:49:56 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/02 14:16:43 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/04 16:25:58 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 //#include <stdio.h>
 //#include <stdlib.h>
 //
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	signal;
-	int	number;
+	size_t	i;
+	size_t	signal;
+	size_t	number;
 
 	i = 0;
 	signal = 1;
