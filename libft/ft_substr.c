@@ -25,16 +25,16 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	final[i] = '\0';
 	return (final);
 }
-
+/*
 int		main()
 {
 	char str[] = "aaa bbb ccc";
 	char *asd;
-	int start = 0;
-	int length = 4;
+	int start = 1;
+	int length = 5;
 
 	printf("%s\n", str);
 	asd = ft_substr(str, start, length);
 	printf("%s\n", asd);
 	return (0);
-}
+}*/

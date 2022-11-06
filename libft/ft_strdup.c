@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mu <mu@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:36:45 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/04 17:50:37 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/06 12:58:59 by mu               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strdup(const char *s)
 	final[i] = '\0';
 	return (final);
 }
-
+/*
 int	main()
 {
 	char *a = "Mania de voce";
@@ -40,4 +40,4 @@ int	main()
 	puts(a);
 	puts(b);
 	return 0;
-}
+}*/

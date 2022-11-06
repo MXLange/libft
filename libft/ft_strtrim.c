@@ -35,7 +35,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	final[end] = '\0';
 	return (final);
 }
-
+/*
 int	main()
 {
 	char *str = "cacbbbbbcaa";
@@ -45,4 +45,4 @@ int	main()
 	printf("%s\n", str);
 	printf("%s\n", here);
 	return 0;
-}
+}*/

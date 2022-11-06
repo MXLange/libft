@@ -24,7 +24,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	final[s1_count] = '\0';
 	return (final);
 }
-
+/*
 int	main()
 {
 	char *a = "Vinho tinto ";
@@ -33,4 +33,4 @@ int	main()
 	printf("A: %s + B: %s =\n", a, b);
 	printf("%s\n", concat);
 	return (0);
-}
+}*/
