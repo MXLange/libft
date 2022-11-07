@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 16:34:57 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/04 14:30:03 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/07 14:12:53 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 /*int	main()
 {
 	size_t n = 5;
-	char src[100] = "Asa de camelo";
-	char dest[100] = "Cachorro come frango";
+	char src[100] = "12345";
+	char dest[100] = "12345";
 
-	char src2[100] = "Asa de camelo";
-	char dest2[100] = "Cachorro come frango";
+	char src2[100] = "12345";
+	char dest2[100] = "12345";
 
 	char *a = memcpy(dest, src, n);
 	char *b = ft_memcpy(dest2, src2, n);

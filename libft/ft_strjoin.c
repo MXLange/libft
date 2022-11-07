@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/07 11:33:27 by msprenge          #+#    #+#             */
+/*   Updated: 2022/11/07 16:30:09 by msprenge         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 
 #include "libft.h"
 
@@ -8,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	final_len;
 	char	*final;
 
-	final_len = ft_strlen(s1) + ft_strlen(s2) + 2;
+	final_len = ft_strlen(s1) + ft_strlen(s2) + 1;
 	final = malloc(sizeof(char) * (final_len));
 	if (!final)
 		return (NULL);
@@ -27,7 +39,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 /*
 int	main()
 {
-	char *a = "Vinho tinto ";
+	char *a = "Vinho tinto";
 	char *b = "do Porto.";
 	char *concat = ft_strjoin(a, b);
 	printf("A: %s + B: %s =\n", a, b);

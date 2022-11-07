@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/07 11:33:47 by msprenge          #+#    #+#             */
+/*   Updated: 2022/11/07 16:56:48 by msprenge         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 
 #include "libft.h"
 
@@ -35,14 +47,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	final[end] = '\0';
 	return (final);
 }
-/*
+
 int	main()
 {
-	char *str = "cacbbbbbcaa";
-	char *tirar = "acb";
+	char *str = "uLucas Henriqueu";
+	char *tirar = "u";
 	char *here;
 	here = ft_strtrim(str, tirar);
 	printf("%s\n", str);
 	printf("%s\n", here);
 	return 0;
-}*/
+}
