@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mu <mu@student.42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 16:29:30 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/07 13:34:58 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/08 11:41:05 by mu               ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,29 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*result;
-	unsigned int	total;
+	char	*final;
+	size_t	total;
 	size_t	i;
 
-	i = 0;
-	total = nmemb * size;
-	result = malloc(total);
-	if(!result || nmemb == 0 || size == 0)
+	total = size * nmemb;
+	final = malloc(total);
+	if (final == NULL)
 		return (NULL);
-	ft_bzero(result, nmemb);
-	return (result);
+	i = 0;
+	while (total > 0)
+	{
+		final[i] = 0;
+		i++;
+		total--;
+	}
+	return ((void *)final);
 }
 /*
 int	main()
 {
 	int	n = 5;
 	int	i = 0;
-	char *a = "olas";
+	char *a = "olaa";
 
 	while (i < n)
 	{

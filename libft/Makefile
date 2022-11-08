@@ -17,7 +17,7 @@ AR = ar rcs
 OBJ = $(FUNCS:%.c=%.o)
 BONUS_OBJ = $(BONUS:%.c=%.o)
 
-all: $(NAME) bonus
+all: $(NAME)
 
 $(NAME): $(OBJ)
 		@$(AR) $(NAME) $(OBJ)
@@ -25,7 +25,7 @@ $(NAME): $(OBJ)
 bonus: $(OBJ) $(BONUS_OBJ)
 		@$(AR) $(NAME) $(BONUS_OBJ) $(OBJ)
 
-compile: all
+compile: bonus
 		@$(CC) $(CFLAGS) $(FUNCS)
 
 clean:
@@ -36,3 +36,6 @@ fclean: clean
 
 re: fclean all
 
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(FUNCS) $(BONUS)
+	gcc -nostartfiles -shared -o libft.so $(OBJ) $(BONUS_OBJ)
