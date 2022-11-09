@@ -1,3 +1,14 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/09 12:18:50 by msprenge          #+#    #+#             */
+/*   Updated: 2022/11/09 12:38:17 by msprenge         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "libft.h"
 
@@ -8,7 +19,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void*))
 
 	if (!lst || !f || !del)
 		return (NULL);
-	if (!(new_list = ft_lstnew(f(lst->content))))
+	new_list = ft_lstnew(f(lst->content));
+	if (!new_list)
 		return (NULL);
 	lst = lst->next;
 	while (lst)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mu <mu@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 15:46:35 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/08 11:27:04 by mu               ###   ########.fr       */
+/*   Updated: 2022/11/09 12:48:32 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	return (NULL);
 }
 /*
-int		main()
+int	main()
 {
-	char big[] = "Ola, quem mesmo fala? Não seai. Quem não mesmo sei. Não sei mesmo.";
+	char big[] = "Ola, quem mesmo fala?
+		Não seai. Quem não mesmo sei. Não sei mesmo.";
 	char little[] = "fala";
 
 	printf("%s\n", ft_strnstr(big, little, 100));

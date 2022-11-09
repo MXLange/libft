@@ -6,10 +6,9 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:33:12 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/07 11:33:13 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/09 17:22:41 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -26,9 +25,8 @@ static size_t	ccount(const char *s, char c)
 			i++;
 		while (s[i] != c && s[i] != '\0')
 			i++;
-		if (s[i -1] != c)
+		if (s[i - 1] != c)
 			count++;
-
 	}
 	return (count);
 }
@@ -46,14 +44,14 @@ static size_t	get_size(const char *s, size_t *pos, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	char **final;
+	char	**final;
 	size_t	pos;
 	size_t	act_pos;
 	size_t	i;
 	size_t	final_size;
 
 	final_size = ccount(s, c);
-	final = malloc(sizeof(char*) * (final_size + 1));
+	final = malloc(sizeof(char *) * (final_size + 1));
 	if (!final)
 		return (NULL);
 	i = 0;

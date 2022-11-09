@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mu <mu@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 11:33:47 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/08 10:11:35 by mu               ###   ########.fr       */
+/*   Updated: 2022/11/09 12:49:16 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-static char *ft_makefinal(void)
+static char	*ft_makefinal(void)
 {
 	char	*final;
 

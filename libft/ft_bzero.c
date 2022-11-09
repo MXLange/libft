@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 14:17:14 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/02 16:33:22 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:33:15 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*p;
-	size_t	i;
+	size_t			i;
 
 	i = 0;
-	p = (unsigned char*)s;
+	p = (unsigned char *)s;
 	while (i < n)
 	{
 		p[i] = 0;

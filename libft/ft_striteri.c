@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 13:15:18 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/07 15:30:09 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:43:51 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	size_t	i;
 
 	if (!s)
-		return;
+		return ;
 	i = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		f(i, &s[i]);
 		i++;

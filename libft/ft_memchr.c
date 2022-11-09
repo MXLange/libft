@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 14:07:36 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/04 14:56:14 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:39:09 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*ptr_s;
-	size_t	i;
+	size_t			i;
 
 	ptr_s = (unsigned char *)s;
 	i = 0;

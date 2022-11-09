@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 16:34:57 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/07 14:12:53 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:40:06 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
 	unsigned char	*p_src;
 	unsigned char	*p_dest;
+	size_t			i;
 
 	if (!src && !dest)
 		return (NULL);

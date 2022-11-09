@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 14:57:42 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/04 15:46:25 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:39:38 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*ptr_s1;
 	const unsigned char	*ptr_s2;
-	size_t	i;
+	size_t				i;
 
 	ptr_s1 = (unsigned char *)s1;
 	ptr_s2 = (unsigned char *)s2;

@@ -3,22 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mu <mu@student.42.fr>                      +#+  +:+       +#+        */
+/*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 13:11:23 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/08 11:21:34 by mu               ###   ########.fr       */
+/*   Updated: 2022/11/09 17:26:50 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //#include <stdio.h>
 
-unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+size_t	ft_strlcat(char *dest, char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	dlen;
-	unsigned int	slen;
+	size_t	i;
+	size_t	j;
+	size_t	dlen;
+	size_t	slen;
 
 	if (size == 0)
 		return (ft_strlen(src));
@@ -26,10 +26,8 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	slen = ft_strlen(src);
 	j = dlen;
 	i = 0;
-	if (size < dlen)
-	{
+	if (size <= dlen)
 		return (slen + size);
-	}
 	while (src[i] != '\0' && i < size - dlen - 1)
 	{
 		dest[j] = src[i];

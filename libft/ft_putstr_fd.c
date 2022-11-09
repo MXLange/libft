@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:42:47 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/07 15:53:45 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:42:31 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putstr_fd(char *s, int fd)
 	i = 0;
 	if (!s || fd < 0)
 		return ;
-	while(s[i])
+	while (s[i])
 		ft_putchar_fd(s[i++], fd);
 }
 /*

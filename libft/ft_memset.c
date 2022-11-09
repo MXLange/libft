@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 16:01:40 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/04 13:11:06 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/09 12:41:33 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*p;
-	size_t	i;
+	size_t			i;
 
 	p = (unsigned char *)s;
 	i = 0;
