@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 12:19:06 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/09 12:19:08 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/11 12:18:05 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,15 @@
 int	ft_lstsize(t_list *lst)
 {
 	size_t	size;
+	t_list	*temp;
 
 	size = 0;
 	if (!lst)
 		return (0);
-	while (lst)
+	temp = lst;
+	while (temp)
 	{
-		lst = lst->next;
+		temp = temp->next;
 		size++;
 	}
 	return (size);

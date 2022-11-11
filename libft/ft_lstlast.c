@@ -6,7 +6,7 @@
 /*   By: msprenge <msprenge@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 12:18:36 by msprenge          #+#    #+#             */
-/*   Updated: 2022/11/09 12:18:44 by msprenge         ###   ########.fr       */
+/*   Updated: 2022/11/11 12:03:32 by msprenge         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,14 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
+	t_list	*temp;
+
 	if (!lst)
 		return (NULL);
-	while (lst->next != NULL)
-		lst = lst->next;
-	return (lst);
+	temp = lst;
+	while (temp->next != NULL)
+		temp = temp->next;
+	return (temp);
 }
 /*
 int	main()
